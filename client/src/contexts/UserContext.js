@@ -6,7 +6,7 @@ export const UserContext = createContext();
 
 export function UserProvider({ children }) {
     const [user, setUser] = useState(null);
-    const { fetchTasks } = useContext(TaskContext); // Import fetchTasks from TaskContext
+    const { fetchTasks,setTasks } = useContext(TaskContext); // Import fetchTasks from TaskContext
 
     useEffect(() => {
         const initializeUser = async () => {
@@ -40,6 +40,7 @@ export function UserProvider({ children }) {
         logoutService();
         localStorage.removeItem('token');
         setUser(null);
+        setTasks([]); // Clear tasks in TaskContext
     };
 
     return (
