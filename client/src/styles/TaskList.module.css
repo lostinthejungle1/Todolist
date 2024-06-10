@@ -1,0 +1,32 @@
+.taskListContainer {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .taskListTitle {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .loading {
+    font-size: 20px;
+    text-align: center;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .taskListContainer {
+      padding: 15px;
+    }
+  
+    .taskListTitle {
+      font-size: 24px;
+    }
+  }
+  

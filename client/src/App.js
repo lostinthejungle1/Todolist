@@ -8,6 +8,7 @@ import RegisterPage from './components/RegisterPage';
 import PrivateRoute from './components/PrivateRoute';
 import { UserProvider } from './contexts/UserContext';
 import { TaskProvider } from './contexts/TaskContext';
+import './style.css'
 
 function App() {
   return (

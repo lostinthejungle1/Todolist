@@ -1,0 +1,61 @@
+.taskItem {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .taskItem.completed {
+    background-color: #e0ffe0;
+    text-decoration: line-through;
+  }
+  
+  .taskItem input[type="checkbox"] {
+    margin-right: 15px;
+  }
+  
+  .taskItem div {
+    flex-grow: 1;
+  }
+  
+  .taskItem h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .taskItem p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  .taskItem button {
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .taskItem button:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 768px) {
+    .taskItem {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .taskItem button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  

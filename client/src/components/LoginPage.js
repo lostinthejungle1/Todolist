@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import {message} from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../contexts/UserContext';
+import styles from '../styles/LoginPage.module.css';
 
 function LoginPage() {
   const [credentials, setCredentials] = useState({ email: '', password: '' });
@@ -20,7 +21,7 @@ function LoginPage() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={styles.loginForm}>
       <label>
         Email:
         <input

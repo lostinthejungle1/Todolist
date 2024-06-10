@@ -1,0 +1,69 @@
+.taskForm {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .taskForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .taskForm input[type="text"],
+  .taskForm input[type="date"],
+  .taskForm input[type="checkbox"],
+  .taskForm textarea,
+  .taskForm select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .taskForm input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .taskForm button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .taskForm button:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 768px) {
+    .taskForm {
+      padding: 15px;
+    }
+  
+    .taskForm label {
+      font-size: 14px;
+    }
+  
+    .taskForm input[type="text"],
+    .taskForm input[type="date"],
+    .taskForm textarea,
+    .taskForm select {
+      font-size: 14px;
+    }
+  
+    .taskForm button {
+      font-size: 14px;
+    }
+  }
+  

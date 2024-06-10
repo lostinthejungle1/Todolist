@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../contexts/UserContext';
+import styles from '../styles/RegisterPage.module.css'
 
 function RegisterPage() {
   const [credentials, setCredentials] = useState({ email: '', password: '', confirmPassword: '' });
@@ -39,7 +40,7 @@ function RegisterPage() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={styles.registerForm}>
       <label>
         Email:
         <input

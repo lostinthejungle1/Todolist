@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { TaskContext } from '../contexts/TaskContext';
 import { useParams, useNavigate } from 'react-router-dom';
+import styles from '../styles/TaskForm.module.css';
 
 function TaskForm() {
   const { addNewTask, updateExistingTask, tasks } = useContext(TaskContext);
@@ -37,7 +38,7 @@ function TaskForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={styles.taskForm}>
       <label>
         Title:
         <input
